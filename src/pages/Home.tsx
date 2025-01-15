@@ -8,7 +8,7 @@ const Home = () => {
       </div>
       <div className='flex flex-col md:flex-row items-center'>
         <img src="/images/bobNoBg.png" className=''/>
-        <p className='text-md md:text-lg md:mt-36 p-10 m:p-2 md:mr-24 md:block'>
+        <p className='text-md md:text-lg md:mt-36 p-10 m:p-2 md:mr-24 hidden md:block'>
           Robert Noble is a Filipino-American (and British) writer and attorney living in Brooklyn, New York. 
           He has contributed to works at TASCHEN and Bushwick Daily. 
           He can be found smiling awkwardly in photos on Instagram at{' '}
@@ -20,10 +20,10 @@ const Home = () => {
         </p>
       </div>
       <div className='flex flex-col md:flex-row bg-black text-white'>
-        <Link to="https://bottlecap.press/products/asymptotes" className='md:hidden'> {/* Display image first on small screens */}
+        <Link to="https://bottlecap.press/products/asymptotes" className='md:hidden'> 
           <img src="/images/asymptotes.webp" className='w-[80%] md:w-[60%] m-10 md:m-24 border-2 border-white'/>
         </Link>
-        <div className='flex flex-col md:order-1 md:w-1/2 md:mt-24 md:p-24 m-10'> {/* Ensure it maintains layout on larger screens */}
+        <div className='flex flex-col md:order-1 md:w-1/2 md:mt-24 md:p-24 m-10 mt-0'> 
           <p className='m-2 md:text-2xl text-lg'>
             Asymptotes: On Closeness is a mixed-genre collection of stories on human (and non-human) relationships. 
             At times goofy, and other times sincere, it wrestles with what it means to long for and feel love.
@@ -35,10 +35,10 @@ const Home = () => {
             Even though we all try anyway.
           </p>
           <Link to="https://bottlecap.press/products/asymptotes">
-            <h1 className='text-2xl bg-white text-black text-center font-vcr'>BUY IT</h1>
+            <h1 className='text-2xl bg-white text-black text-center font-vcr border-2 border-black'>BUY IT</h1>
           </Link>
         </div>
-        <Link to="https://bottlecap.press/products/asymptotes" className='hidden md:block md:order-2 md:w-1/2'> {/* Maintain image placement on larger screens */}
+        <Link to="https://bottlecap.press/products/asymptotes" className='hidden md:block md:order-2 md:w-1/2'>
           <img src="/images/asymptotes.webp" className='w-[80%] md:w-[60%] m-10 md:m-24 border-2 border-white'/>
         </Link>
       </div>
