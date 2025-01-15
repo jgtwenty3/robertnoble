@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+  background-color: "#fffff";
+  font-family: "inconsolata", sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'inconsolata';
+    src: url('/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'inconsolataBold';
+    src: url('/fonts/Inconsolata-ExtraBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style:italic
+  }
+  @font-face{
+    font-family: 'vcr';
+    src: url('/fonts/VCR.ttf') format('truetype');
+    font-weight: 400;
+    font-style:normal
+  }
+
+ 
+}
