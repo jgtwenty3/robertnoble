@@ -8,7 +8,7 @@ const Home = () => {
       </div>
       <div className='relative flex flex-col md:flex-row items-center'>
         <img src="/images/bobNoBg.png" className='w-fit'/> 
-        <h2 className='absolute right-0 mr-5 mt-96 md:mr-5 md:mt-[-90px] md:text-xl bg-white p-2 text-xs'>I WRITE.</h2> 
+        <h2 className='absolute right-0 mr-5 mt-60 md:mr-5 md:mt-[-90px] md:text-xl bg-white p-2 text-xs'>I WRITE.</h2> 
       </div>
       <div className='flex flex-col md:flex-row bg-black text-white'>
         <Link to="https://bottlecap.press/products/asymptotes" className='md:hidden'>
