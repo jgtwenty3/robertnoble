@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-const navItems = ["HOME", "ABOUT", "WRITINGS","CONTACT"];
+const navItems = ["HOME", "ABOUT", "WRITINGS",];
 
 const NavBar = () => {
   return (
