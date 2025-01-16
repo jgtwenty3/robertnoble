@@ -23,28 +23,29 @@ const Writings = () => {
       </div>
       <div className="m-2">
         <div className="mb-5">
-          <h1 className="font-vcr mt-10 md:mt-0 text-4xl md:text-9xl">ASYMPTOTES:<br/>ON CLOSENESS</h1>
+          <h1 className="font-vcr mt-10 md:mt-0 text-4xl md:text-9xl">ASYMPTOTES:<br />ON CLOSENESS</h1>
           <h2 className="text-3xl m-2">by Robert Noble</h2>
         </div>
         <div className="text-xl mb-5 m-2 flex flex-col md:flex-row">
           <div className="md:w-1/2 md:pr-10">
             <p className="mb-5">
-              Asymptotes: On Closeness is a mixed-genre collection of stories on human (and non-human) relationships. 
-              At times goofy, and other times sincere, it wrestles with what it means to long for and feel love.
+              Asymptotes: On Closeness is a mixed-genre collection of stories on human (and non-human) relationships. At times goofy, and other times sincere, it wrestles with what it means to long for and feel love.
             </p>
             <p className="mb-5">
-              From examinations on romantic love and self-acceptance, forgiveness and transient interactions at a Manhattan hotel, 
-              Asymptotes aims to tell stories that reveal how intimacy manifests itself through experience and imagination, 
-              and how language ultimately falls short in expressing how we really feel. Even though we all try anyway.
+              From examinations on romantic love and self-acceptance, forgiveness and transient interactions at a Manhattan hotel, Asymptotes aims to tell stories that reveal how intimacy manifests itself through experience and imagination, and how language ultimately falls short in expressing how we really feel. Even though we all try anyway.
             </p>
+            <Link to="https://bottlecap.press/products/asymptotes" className="block hidden md:inline-block text-center mx-5 md:mx-auto bg-white text-black font-bold text-2xl py-2 px-4 border-2 border-black">
+              BUY IT
+            </Link>
           </div>
           <div className="relative mb-5 md:w-1/2">
-            <img src="/images/asymptotes.webp" className="w-full md:max-w-[50%] md:self-center"/>
+            <img src="/images/asymptotes.webp" className="w-full md:max-w-[50%] md:self-center" />
           </div>
         </div>
-        <Link to="https://bottlecap.press/products/asymptotes" className="block text-center mx-20 bg-white text-black font-bold text-2xl py-2 px-4 border-2 border-black">
+        <Link to="https://bottlecap.press/products/asymptotes" className="block md:hidden text-center mx-5 md:mx-auto bg-white text-black font-bold text-2xl py-2 px-4 border-2 border-black">
           BUY IT
         </Link>
+       
       </div>
     </div>
   );
