@@ -7,29 +7,25 @@ const About = () => {
     const emailElement = document.querySelector('.email-animation');
     const instagramElement = document.querySelector('.instagram-animation');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          contactHeading!.classList.add('tracking-in-contract');
-          
-          setTimeout(() => {
-            emailElement!.classList.add('bounce-top');
-            instagramElement!.classList.add('bounce-top');
-          }, 1800); 
+    const handleScroll = () => {
+      const contactBounding = contactHeading!.getBoundingClientRect();
+      if (contactBounding.top < window.innerHeight && contactBounding.bottom >= 0) {
+        // CONTACT is in view
+        contactHeading!.classList.add('tracking-in-contract');
 
-          observer.unobserve(contactHeading!);
-        }
-      });
-    }, { threshold: 1.0 });
+        setTimeout(() => {
+          emailElement!.classList.add('bounce-top');
+          instagramElement!.classList.add('bounce-top');
+        }, 1800);
 
-    if (contactHeading) {
-      observer.observe(contactHeading);
-    }
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      if (contactHeading) {
-        observer.unobserve(contactHeading);
-      }
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -52,7 +48,7 @@ const About = () => {
         <h1 id='contact-heading' className='font-vcr text-5xl md:text-9xl underline mb-5 hidden-until-animated opacity-0'>
           CONTACT
         </h1>
-        <h2 className='text-2xl md:text-6xl hover:scale-105 email-animation opacity-0'>
+        <h2 className='text-2xl md:text-6xl hover:scale-105 email-animation opacity-0 '>
           email:
           <a href="mailto:bobbynob9@gmail.com" className='ml-2 '>
             bobbynob9@gmail.com
