@@ -4,11 +4,19 @@ import { Link } from 'react-router-dom';
 const About = () => {
   useEffect(() => {
     const contactHeading = document.getElementById('contact-heading');
+    const emailElement = document.querySelector('.email-animation');
+    const instagramElement = document.querySelector('.instagram-animation');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           contactHeading!.classList.add('tracking-in-contract');
+          
+          setTimeout(() => {
+            emailElement!.classList.add('bounce-top');
+            instagramElement!.classList.add('bounce-top');
+          }, 1800); 
+
           observer.unobserve(contactHeading!);
         }
       });
@@ -41,16 +49,16 @@ const About = () => {
         <img src="/images/bobbywindow.webp" className='kenburns-top md:w-[50%]'/>
       </div>
       <div className='m-10'>
-        <h1 id='contact-heading' className='font-vcr text-5xl md:text-9xl underline mb-5'>
+        <h1 id='contact-heading' className='font-vcr text-5xl md:text-9xl underline mb-5 hidden-until-animated opacity-0'>
           CONTACT
         </h1>
-        <h2 className='bounce-top text-2xl md:text-6xl hover:scale-105'>
+        <h2 className='text-2xl md:text-6xl hover:scale-105 email-animation opacity-0'>
           email:
-          <a href="mailto:bobbynob9@gmail.com" className='ml-2 underline'>
+          <a href="mailto:bobbynob9@gmail.com" className='ml-2 '>
             bobbynob9@gmail.com
           </a>
         </h2>
-        <h2 className='bounce-top text-2xl md:text-6xl hover:scale-105'>
+        <h2 className='text-2xl md:text-6xl hover:scale-105 instagram-animation opacity-0'>
           instagram:
           <span className='ml-2'>
             <Link to="https://www.instagram.com/bobmeetsworld">
