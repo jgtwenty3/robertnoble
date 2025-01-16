@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Writings = () => {
   return (
-    <div>
+    <div className="md:m-2">
       <div className="m-2">
         <h1 className="font-vcr text-4xl md:text-9xl">POST-COLONIAL-POOP</h1>
         <h2 className="text-3xl m-2">by Robert Noble</h2>

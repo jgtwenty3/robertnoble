@@ -379,7 +379,7 @@ body {
 	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
          
-          animation-delay:1s
+          animation-delay:0.8s
 }
 
  @-webkit-keyframes tracking-in-contract {
@@ -412,6 +412,7 @@ body {
 .kenburns-top {
 	-webkit-animation: kenburns-top 5s ease-out both;
 	        animation: kenburns-top 5s ease-out both;
+         
           
 }
 
@@ -423,8 +424,8 @@ body {
             transform-origin: 50% 16%;
   }
   100% {
-    -webkit-transform: scale(1.10) translateY(-15px);
-            transform: scale(1.10) translateY(-15px);
+    -webkit-transform: scale(1.01) translateY(-15px);
+            transform: scale(1.01) translateY(-15px);
     -webkit-transform-origin: top;
             transform-origin: top;
   }
@@ -437,8 +438,8 @@ body {
             transform-origin: 50% 16%;
   }
   100% {
-    -webkit-transform: scale(1.10) translateY(-15px);
-            transform: scale(1.10) translateY(-15px);
+    -webkit-transform: scale(1.05) translateY(-15px);
+            transform: scale(1.05) translateY(-15px);
     -webkit-transform-origin: top;
             transform-origin: top;
   }
@@ -446,7 +447,7 @@ body {
 .bounce-top {
 	-webkit-animation: bounce-top 0.9s both;
 	        animation: bounce-top 0.9s both;
-          
+          animation-delay:0.5s
 }
 
  @-webkit-keyframes bounce-top {
