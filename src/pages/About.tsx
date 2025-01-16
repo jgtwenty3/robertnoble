@@ -14,17 +14,25 @@ const About = () => {
             </Link>
           </span>.
         </p>
-        <img src="/images/bobbywindow.webp" className='md:w-[50%] '/>
-        
+        <img src="/images/bobbywindow.webp" className='md:w-[50%]'/>
       </div>
-      <div className=' m-10'>
-        <h1 className='font-vcr text-5xl md:text-9xl underline mb-5 '>CONTACT</h1>
-        <h2 className='text-2xl md:text-6xl '>email: bobbynob9@gmail.com</h2>
-        <h2 className='text-2xl md:text-6xl'>instagram: <span><Link to="https://www.instagram.com/bobmeetsworld">
+      <div className='m-10'>
+        <h1 className='font-vcr text-5xl md:text-9xl underline mb-5'>CONTACT</h1>
+        <h2 className='text-2xl md:text-6xl'>
+          email:
+          <a href="mailto:bobbynob9@gmail.com" className='ml-2 underline'>
+            bobbynob9@gmail.com
+          </a>
+        </h2>
+        <h2 className='text-2xl md:text-6xl'>
+          instagram:
+          <span className='ml-2'>
+            <Link to="https://www.instagram.com/bobmeetsworld">
               @bobmeetsworld
-            </Link></span></h2>
+            </Link>
+          </span>
+        </h2>
       </div>
-      
     </div>
   );
 }

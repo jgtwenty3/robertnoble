@@ -34,7 +34,7 @@ const Writings = () => {
             <p className="mb-5">
               From examinations on romantic love and self-acceptance, forgiveness and transient interactions at a Manhattan hotel, Asymptotes aims to tell stories that reveal how intimacy manifests itself through experience and imagination, and how language ultimately falls short in expressing how we really feel. Even though we all try anyway.
             </p>
-            <Link to="https://bottlecap.press/products/asymptotes" className="block hidden md:inline-block text-center mx-5 md:mx-auto bg-white text-black font-bold text-2xl py-2 px-4 border-2 border-black">
+            <Link to="https://bottlecap.press/products/asymptotes" className="hidden md:inline-block font-vcr text-center mx-5 md:mx-auto bg-white text-black font-bold text-2xl py-2 px-4 border-2 border-black hover:vibrate-1">
               BUY IT
             </Link>
           </div>
@@ -42,10 +42,9 @@ const Writings = () => {
             <img src="/images/asymptotes.webp" className="w-full md:max-w-[50%] md:self-center" />
           </div>
         </div>
-        <Link to="https://bottlecap.press/products/asymptotes" className="block md:hidden text-center mx-5 md:mx-auto bg-white text-black font-bold text-2xl py-2 px-4 border-2 border-black">
+        <Link to="https://bottlecap.press/products/asymptotes" className="block md:hidden font-vcr text-center mx-5 md:mx-auto bg-white text-black font-bold text-2xl py-2 px-4 border-2 border-black hover:vibrate-1">
           BUY IT
         </Link>
-       
       </div>
     </div>
   );
