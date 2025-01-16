@@ -8,11 +8,11 @@ const About = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          contactHeading.classList.add('tracking-in-contract');
-          observer.unobserve(contactHeading);
+          contactHeading!.classList.add('tracking-in-contract');
+          observer.unobserve(contactHeading!);
         }
       });
-    }, { threshold: 1.0 }); // Adjusted threshold value
+    }, { threshold: 1.0 });
 
     if (contactHeading) {
       observer.observe(contactHeading);
