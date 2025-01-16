@@ -378,6 +378,7 @@ body {
 .tracking-in-contract {
 	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation-delay:1s;
 }
 
  @-webkit-keyframes tracking-in-contract {
@@ -410,7 +411,7 @@ body {
 .kenburns-top {
 	-webkit-animation: kenburns-top 5s ease-out both;
 	        animation: kenburns-top 5s ease-out both;
-          animation-delay: 2s;
+          
 }
 
  @-webkit-keyframes kenburns-top {
@@ -444,7 +445,7 @@ body {
 .bounce-top {
 	-webkit-animation: bounce-top 0.9s both;
 	        animation: bounce-top 0.9s both;
-          animation-delay: 2s;
+          animation-delay: 2.5s;
 }
 
  @-webkit-keyframes bounce-top {
