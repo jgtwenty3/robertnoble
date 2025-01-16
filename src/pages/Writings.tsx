@@ -32,7 +32,7 @@ const Writings = () => {
               Asymptotes: On Closeness is a mixed-genre collection of stories on human (and non-human) relationships. 
               At times goofy, and other times sincere, it wrestles with what it means to long for and feel love.
             </p>
-            <p>
+            <p className="mb-5">
               From examinations on romantic love and self-acceptance, forgiveness and transient interactions at a Manhattan hotel, 
               Asymptotes aims to tell stories that reveal how intimacy manifests itself through experience and imagination, 
               and how language ultimately falls short in expressing how we really feel. Even though we all try anyway.

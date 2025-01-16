@@ -287,3 +287,32 @@ body {
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
   }
 }
+.line-1 {
+  
+  border-right: .12em solid black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.anim-typewriter {
+  animation: typewriter 2s steps(25, end) 1s both, blinkTextCursor 1s infinite step-end;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10ch; 
+  }
+}
+
+@keyframes blinkTextCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+

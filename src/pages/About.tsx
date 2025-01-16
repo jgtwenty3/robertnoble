@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className='flex flex-col justify-between min-h-screen'>
       <div className='flex flex-col md:flex-row m-10 items-center'>
-        <p className='text-md md:text-4xl m-2'>
+        <p className='text-md md:text-4xl m-2 mb-5'>
           Robert Noble is a Filipino-American (and British) writer and attorney living in Brooklyn, New York. 
           He has contributed to works at TASCHEN and Bushwick Daily. 
           He can be found smiling awkwardly in photos on Instagram at{' '}
